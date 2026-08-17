@@ -133,7 +133,7 @@ class OriginQuery(BeetsPlugin):
 
     def info(self, msg):
         # beets defaults to log level warning for event handlers.
-        self._log.warning(escape_braces(msg))
+        self._log.debug(escape_braces(msg))
 
 
     def print_tags(self, items, use_tagged):
